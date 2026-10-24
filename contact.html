@@ -31,8 +31,74 @@
                 </p>
 
                 <form action="" method="post">
+                    <fieldset>
 
-                    
+                        <legend>Personal Information</legend>
+                        <label>
+                            Full Name:
+                            <input type="text" placeholder="Jonh Doe">
+                        </label>
+                        <label> <br> <br>
+                            Email:
+                            <input type="email" placeholder="JohnDoe@gmail.com" required>
+                        </label>
+
+                    </fieldset>
+
+                    <fieldset>
+
+                        <legend>Interest Type</legend>
+                        
+                        <input type="radio" id="volunteer" name="interest" value="interest" required>
+                        <label for="volunteer">Volunteer</label>
+
+                        <input type="radio" id="foster" name="interest" value="interest" required>
+                        <label for="foster">Foster</label>
+
+                        <input type="radio" id="adoption" name="interest" value="interest" required>
+                        <label for="adoption">Adoption</label>
+                        <br><br>
+                       <label for="experience">Tell us about your experience with pets:</label><br>
+                       <textarea id="experience" name="experience" rows="8"></textarea>
+
+                    </fieldset>
+
+                    <fieldset>
+
+                        <legend>Availability</legend>
+
+                        <input type="checkbox" id="monday" name="availability" value="availability">
+                        <label for="monday">Monday</label>
+
+                        <input type="checkbox" id="tuesday" name="availability" value="availability">
+                        <label for="tuesday">Tuesday</label>
+
+                        <input type="checkbox" id="wednesday" name="availability" value="availability">
+                        <label for="wednesday">Wednesday</label>
+
+                        <input type="checkbox" id="thursday" name="availability" value="availability">
+                        <label for="thursday">Thursday</label>
+
+                        <input type="checkbox" id="Friday" name="availability" value="availability">
+                        <label for="Friday">Friday</label>
+
+                        <input type="checkbox" id="Saturday" name="availability" value="availability">
+                        <label for="saturday">Saturday</label>
+
+                        <input type="checkbox" id="sunday" name="availability" value="availability">
+                        <label for="sunday">Sunday</label>
+
+                    </fieldset>
+
+                    <fieldset>
+                        
+                        <legend>Short Message</legend>
+
+                        <label for="message">Send us a Message</label>
+                        <textarea id="message" name="message" rows="8"></textarea>
+                    </fieldset>
+
+                    <button type="submit">Submit</button>
                 </form>
         </section>
     </main>
