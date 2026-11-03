@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    /* outline: 1px solid black; */
+}
+
+
+body {
+    margin: 0;
+    font-family: arial, sans-serif;
+    background-color: #f1eee8;
+}
+
+
+/* Mobile First Approach */
+
+/* Home Page */
+
+.main-header {
+    background-color: bisque;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.logo {
+    display: block;
+    max-width: 200px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.main-header h1 {
+    text-align: center;
+}
+
+.main-header nav ul {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    list-style: none;
+    margin: 0 auto;
+    padding: 5px ;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.main-header nav a {
+    text-decoration: none;
+}
+
+.msn {
+    background-color: #2AD9A9;
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.msn h2 {
+   text-align: center;
+   margin: 10px 0;
+   background-color: bisque;
+   border-radius: 20px;
+}
+
+.msn p::first-letter {
+    font-size: 2em;
+    font-weight: bold;
+    margin-right: 2px;
+    line-height: 1;
+}
+
+.msn figure {
+    text-align: center;
+}
+
+.msn figure img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.msn figure figcaption {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.imp {
+    background-color: #2AD9A9;
+    margin: 20px 10px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.imp h2 {
+    text-align: center;
+    margin: 10px 0;
+    background-color: bisque;
+    border-radius: 20px;
+}
+
+.imp ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.imp figure {
+    text-align: center;
+}
+
+.imp figure img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.imp figure figcaption {
+    margin-top: 20px;
+    font-weight: bold;
+}
