@@ -1,7 +1,12 @@
+
+
+
 * {
     box-sizing: border-box;
     /* outline: 1px solid black; */
 }
+
+
 
 
 body {
@@ -13,7 +18,9 @@ body {
 
 /* Mobile First Approach */
 
-/* Home Page */
+/* Home Page , Contact , Services , About */
+
+
 
 .main-header {
     background-color: bisque;
@@ -26,6 +33,7 @@ body {
     max-width: 200px;
     height: auto;
     margin: 0 auto;
+    border-radius: 20px;
 }
 
 .main-header h1 {
@@ -48,108 +56,336 @@ body {
     text-decoration: none;
 }
 
-.msn {
+.first-sctn {
     background-color: #2AD9A9;
     margin: 0 10px;
     padding: 10px;
     border-radius: 20px;
 }
 
-.msn h2 {
+.first-sctn h2 {
    text-align: center;
    margin: 10px 0;
    background-color: bisque;
    border-radius: 20px;
 }
 
-.msn p::first-letter {
+.first-sctn p::first-letter {
     font-size: 2em;
     font-weight: bold;
     margin-right: 2px;
     line-height: 1;
 }
 
-.msn figure {
+.first-sctn figure {
     text-align: center;
 }
 
-.msn figure img {
+.first-sctn figure img {
     display: block;
     margin: 0 auto;
     max-width: 100%;
     height: auto;
 }
 
-.msn figure figcaption {
+.first-sctn figure figcaption {
     margin-top: 20px;
     font-weight: bold;
 }
 
-.imp {
+.second-sctn {
     background-color: #2AD9A9;
     margin: 20px 10px;
     padding: 10px;
     border-radius: 20px;
 }
 
-.imp h2 {
+.second-sctn h2 {
     text-align: center;
     margin: 10px 0;
     background-color: bisque;
     border-radius: 20px;
 }
 
-.imp ul {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.imp figure {
-    text-align: center;
-}
-
-.imp figure img {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    height: auto;
-}
-
-.imp figure figcaption {
-    margin-top: 20px;
-    font-weight: bold;
-}
-
-.hych {
-    background-color: #2AD9A9;
-    margin: 20px 10px;
-    padding: 10px;
-    border-radius: 20px;
-}
-
-.hych h2 {
-    background-color: bisque;
-    text-align: center;
-    border-radius: 20px;
-}
-
-.hych p::first-letter {
+.second-sctn p::first-letter {
     font-size: 2em;
     font-weight: bold;
     margin-right: 2px;
     line-height: 1;
 }
 
-.hych ul {
+.second-sctn ul {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.hf {
+.second-sctn figure {
+    text-align: center;
+}
+
+.second-sctn figure img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.second-sctn figure figcaption {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.third-sctn {
+    background-color: #2AD9A9;
+    margin: 20px 10px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.third-sctn h2 {
+    background-color: bisque;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.third-sctn p::first-letter {
+    font-size: 2em;
+    font-weight: bold;
+    margin-right: 2px;
+    line-height: 1;
+}
+
+.third-sctn ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.forth-sctn {
+    background-color: #2AD9A9;
+    margin: 20px 10px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.forth-sctn h2 {
+    background-color: bisque;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.forth-sctn p::first-letter {
+    font-size: 2em;
+    font-weight: bold;
+    margin-right: 2px;
+    line-height: 1;
+}
+
+.pies {
     background-color: #2AD9A9;
     text-align: center;
     padding: 10px;
     font-weight: bold;
 }
+
+
+/* Form */
+
+.form {
+    background-color: #2AD9A9;
+    margin: 20px 10px;
+    border-radius: 20px;
+    padding: 10px;
+
+}
+
+.form h2 {
+    background-color: bisque;
+    text-align: center;
+    border-radius: 20px;
+} 
+
+.form fieldset {
+    border: 2px solid #315b48;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.form legend {
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.form label {
+    /* text-align: left; */
+    font-weight: bold;
+}
+
+.form input {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.form fieldset label {
+   padding: 5px;
+}
+
+.form .input-group label{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form fieldset input[type="text"], .form fieldset input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #315b48;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.form .radio-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.radio-group div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+}
+
+.radio-group input[type="radio"] {
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.radio-group label {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+}
+
+.text-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.text-area label {
+    text-align: left;
+    margin-bottom: -15px;
+    margin-top: 10px;
+}
+
+.text-area textarea {
+    width: 100%;
+    min-height: 120px;
+    padding: 5px;
+    border: 1px solid #315b48;
+    border-radius: 10px;
+    resize: vertical;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox-group div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.checkbox-group label {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.msg .text-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-2 label {
+    margin-bottom: 5px;
+}
+
+.msg fieldset textarea {
+    width: 100%;
+    min-height: 120px;
+    padding-top: 10px;
+    border: 1px solid #315b48;
+    border-radius: 10px;
+    resize: vertical;
+}
+
+form button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    width: 25%;
+    border-radius: 20px;
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+/* Edits */
+
+p {
+    line-height: 1.5;
+}
+
+h2 {
+    padding: 5px;
+}
+
+/* Video */
+
+.vd {
+    background-color: #2AD9A9;
+    margin: 20px 10px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.vd h2 {
+    background-color: bisque;
+    text-align: center;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.vd figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vd figure figcaption {
+    text-align: center;
+    padding-top: 10px;
+}
+

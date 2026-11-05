@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
     <title>Twin Cities Animal Rescue/Contact</title>
 </head>
 
 <body>
-    <Header>
-
-        <h1>Contact Twin Cities Animal Rescue</h1>
+    <Header class="main-header">
+        <img class="logo" src="img-videos/Animal Shelter_c/rescue-logo_c.png">
+        <h1>Twin Cities Animal Rescue Contact</h1>
 
         <nav>
               <ul>
@@ -22,15 +23,22 @@
     </Header>
 
     <main>
-        <section>
+        <section class="first-sctn">
 
             <h2>Volunteer or Foster With Us</h2>
             <p>
                 We are always looking for compassionate people who want to make a difference in the lives of animals. Whether you are interested in volunteering your time or providing a temporary foster home, your support helps us rescue and care for animals in need. <br>
                  Complete the form below to tell us about your interests, and our team will contact you with more information about how you can get involved.
                 </p>
+            </section>    
+
+            <section class="form">
+
+                <h2>Make a Differrence: Get Involved!</h2>
 
                 <form action="" method="post">
+
+                <div class="input-group">
                     <fieldset>
 
                         <legend>Personal Information</legend>
@@ -38,69 +46,84 @@
                             Full Name:
                             <input type="text" placeholder="Jonh Doe">
                         </label>
-                        <label> <br> <br>
+                        <label> 
                             Email:
                             <input type="email" placeholder="JohnDoe@gmail.com" required>
                         </label>
 
                     </fieldset>
-
+                </div>
                     <fieldset>
 
                         <legend>Interest Type</legend>
-                        
-                        <input type="radio" id="volunteer" name="interest" value="interest" required>
-                        <label for="volunteer">Volunteer</label>
+                        <div class="radio-group">
 
-                        <input type="radio" id="foster" name="interest" value="interest" required>
-                        <label for="foster">Foster</label>
+                            <div>
+                                <input type="radio" id="volunteer" name="interest" value="interest" required>
+                                <label for="volunteer">Volunteer</label>
+                            </div>
 
-                        <input type="radio" id="adoption" name="interest" value="interest" required>
-                        <label for="adoption">Adoption</label>
-                        <br><br>
-                       <label for="experience">Tell us about your experience with pets:</label><br>
-                       <textarea id="experience" name="experience" rows="8"></textarea>
+                            <div>
+                                <input type="radio" id="foster" name="interest" value="interest" required>
+                                <label for="foster">Foster</label>
+                            </div>
 
+                            <div>
+                                <input type="radio" id="adoption" name="interest" value="interest" required>
+                                <label for="adoption">Adoption</label>
+                            </div>
+                        </div>
+
+                    <div class="text-area">  
+                        <label for="experience">Tell us about your experience with pets:</label><br>
+                        <textarea id="experience" name="experience" rows="8" placeholder="Enter Message:"></textarea>
+                    </div>
                     </fieldset>
 
-                    <fieldset>
+                    <fieldset class="checkbox-group">
 
                         <legend>Availability</legend>
-
-                        <input type="checkbox" id="monday" name="availability" value="availability">
+                    <div>
                         <label for="monday">Monday</label>
+                        <input type="checkbox" id="monday" name="availability" value="availability">
 
-                        <input type="checkbox" id="tuesday" name="availability" value="availability">
                         <label for="tuesday">Tuesday</label>
+                        <input type="checkbox" id="tuesday" name="availability" value="availability">
 
-                        <input type="checkbox" id="wednesday" name="availability" value="availability">
                         <label for="wednesday">Wednesday</label>
+                        <input type="checkbox" id="wednesday" name="availability" value="availability">
 
-                        <input type="checkbox" id="thursday" name="availability" value="availability">
                         <label for="thursday">Thursday</label>
+                        <input type="checkbox" id="thursday" name="availability" value="availability">
 
-                        <input type="checkbox" id="Friday" name="availability" value="availability">
                         <label for="Friday">Friday</label>
+                        <input type="checkbox" id="Friday" name="availability" value="availability">
 
-                        <input type="checkbox" id="Saturday" name="availability" value="availability">
                         <label for="saturday">Saturday</label>
+                        <input type="checkbox" id="Saturday" name="availability" value="availability">
 
-                        <input type="checkbox" id="sunday" name="availability" value="availability">
                         <label for="sunday">Sunday</label>
-
+                        <input type="checkbox" id="sunday" name="availability" value="availability">
+                    </div>
                     </fieldset>
-
+                <div class="msg">
                     <fieldset>
                         
                         <legend>Short Message</legend>
-
-                        <label for="message">Send us a Message</label>
-                        <textarea id="message" name="message" rows="8"></textarea>
+                    <div class="text-2">
+                        <label class="msg-1" for="message">Send us a Message</label>
+                        <textarea id="message" name="message" rows="8" placeholder="Enter Message:"></textarea>
+                    </div>
                     </fieldset>
+                </div>
 
-                    <button type="submit">Submit</button>
+                  
+                
+                   <button type="submit">Submit</button>
+
+
                 </form>
-        </section>
+            </section>
     </main>
     <footer>
         &copy; 2026 Twin Cities Animal Rescue. All rights Reserved.
