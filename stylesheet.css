@@ -500,6 +500,7 @@ input[type="button"]:active , input[type="submit"]:active {
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
         align-items: center;
+        
     }
 
     .main-header ul li {
@@ -554,7 +555,7 @@ input[type="button"]:active , input[type="submit"]:active {
     }
 
     .second-sctn {
-        margin: 10px;
+        margin: 0 10px;
     }
 
 
@@ -632,6 +633,11 @@ input[type="button"]:active , input[type="submit"]:active {
 
  
 /* edits */
+
+    .form {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
 
     .cat figure {
         width: 50%;
