@@ -6,14 +6,17 @@
     /* outline: 1px solid black; */
 }
 
-
-
-
-body {
+/* Agrega esta regla al inicio para estirar la estructura base */
+html, body {
+    height: 100%;
     margin: 0;
+    padding: 0;
     font-family: arial, sans-serif;
     background-color: #f1eee8;
 }
+
+
+
 
 
 /* Mobile First Approach */
