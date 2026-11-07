@@ -187,6 +187,7 @@ body {
     text-align: center;
     padding: 10px;
     font-weight: bold;
+    
 }
 
 
@@ -343,7 +344,7 @@ body {
 }
 
 
-/* Edits */
+/* ====================== EDITS ================== */
 
 p {
     line-height: 1.5;
@@ -380,7 +381,57 @@ span {
     box-shadow: 0 10px 25px 3px rgba(0, 0, 0, .50);
 }
 
-/* Video */
+.breadcrumbs {
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.breadcrumbs ol {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.breadcrumbs a {
+    color: #6820a5;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.breadcrumbs li + li::before {
+    content: "/";
+    margin-right: 8px;
+    color: #888;
+}
+
+.breadcrumbs [aria-current="page"] {
+    color: #333;
+    font-weight: bold;
+}
+
+/* hover */
+
+@media (hover: hover) {
+    .breadcrumbs a:hover, .navbar a:hover {
+        color: #20c997;
+        text-decoration: underline;
+    }
+}
+
+/* keyboard accessibility */
+
+.breadcrumbs a:focus-visible {
+    outline: 2px solid #6820a5;
+    outline-offset: 3px;
+}
+
+/* ======================= Video ==================== */
 
 .vd {
     background-color: #2AD9A9;
@@ -409,7 +460,7 @@ span {
 
 
 
-/* Submit button for mobile approuch */
+/* =============== Submit button for mobile approuch ==============*/
 
 /* 
 form button {
@@ -439,8 +490,10 @@ input[type="button"]:active , input[type="submit"]:active {
     transform: scale(0.98);
 }
 
+ 
+/* ================== Desktop Approuch ================== */
 
-/* Desktop Approuch */
+
 
 @media (width >= 1024px) {
     .main-header {
@@ -501,7 +554,7 @@ input[type="button"]:active , input[type="submit"]:active {
     }
 
     .second-sctn {
-        margin: 0;
+        margin: 10px;
     }
 
 
@@ -593,5 +646,28 @@ input[type="button"]:active , input[type="submit"]:active {
         border-radius: 25px;
     }
 
+    @media (hover: hover) {
+    .breadcrumbs a:hover, .navbar a:hover {
+        color: #20c997;
+        text-decoration: underline;
+    }
 
+    button {
+        transition: transform 0.2s, background-color 0.2s ease;
+    }
+
+    button:hover {
+        cursor: pointer;
+        color: white;
+        background-color: #0097A7;
+        transform: translateY(-3px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, .20) ;
+    }
+
+    button:active {
+        background-color: #00838f;
+        transform: translateY(1px);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
+    }
+}
 }
