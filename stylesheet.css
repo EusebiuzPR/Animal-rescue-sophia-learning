@@ -367,6 +367,19 @@ h2 {
     text-align: center;
 }
 
+span {
+    font-weight: bold;
+}
+
+.first-sctn ,
+.second-sctn , 
+.third-sctn , 
+.forth-sctn , 
+.fith-sctn ,
+.form {
+    box-shadow: 0 10px 25px 3px rgba(0, 0, 0, .50);
+}
+
 /* Video */
 
 .vd {
@@ -424,4 +437,161 @@ input[type="button"], button[type="submit"] {
 input[type="button"]:active , input[type="submit"]:active {
     background-color: #008ba3;
     transform: scale(0.98);
+}
+
+
+/* Desktop Approuch */
+
+@media (width >= 1024px) {
+    .main-header {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        align-items: center;
+    }
+
+    .main-header ul li {
+        font-size: 1.2rem;
+    }
+
+    .main-header nav {
+        justify-self: end;
+    }
+
+    p {
+        font-size: 1.4rem;
+    }
+
+    .main-header .logo {
+    justify-self: start;
+      width: 15%;
+      height: auto;
+      margin: 0;
+    }
+
+    .first-sctn {
+        height: fit-content;
+    }
+
+    .first-sctn h2,
+     .second-sctn h2 , 
+    .third-sctn h2 , 
+    .forth-sctn h2 
+     {
+        width: 50%;
+        margin: 10px auto;
+    }
+
+    .first-sctn img {
+        width: 100%;
+        height: auto;
+    }
+
+    .second-sctn ul li {
+        font-size: 1.2rem;
+    }
+
+    .third-sctn ul li {
+        font-size: 1.2rem;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .second-sctn {
+        margin: 0;
+    }
+
+
+
+    .second-sctn img {
+        width: 100%;
+    }
+
+    .third-sctn {
+        grid-column: 1/-1;
+        width: 50%;
+        justify-self: center;
+        margin-bottom: 40px;
+    }
+
+
+
+    .first-sctn ,
+    .second-sctn , 
+    .third-sctn ,
+    .forth-sctn ,
+    .fith-sctn {
+        padding: 20px;
+    }
+
+    .vd {
+        grid-column: 1/-1;
+        width: 75%;
+        justify-self: center;
+        padding: 20px;
+    }
+
+    .vd figure {
+        width: 100%;
+        margin: 0;
+    }
+
+    .vd video {
+        display: block;
+        width: 100%;
+        max-width: 1024px;
+        height: auto;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .fith-sctn h2 {
+        width: 50%;
+        margin: 10px auto;
+    }
+
+    .service-page .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        align-items: start;
+    }
+
+    .service-page .third-sctn,
+    .service-page .forth-sctn {
+        grid-column: auto;
+    }
+
+    .service-page .third-sctn {
+        width: 75%;
+    }
+
+    .contact-page .container {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+        align-items: start;
+    }
+
+
+ 
+/* edits */
+
+    .cat figure {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    figcaption {
+        font-size: 1.2rem;
+    }
+
+    img {
+        border-radius: 25px;
+    }
+
+
 }
