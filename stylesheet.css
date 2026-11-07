@@ -342,15 +342,6 @@ body {
     resize: vertical;
 }
 
-form button {
-    display: block;
-    margin: 0 auto;
-    padding: 10px;
-    width: 25%;
-    border-radius: 20px;
-    border: 1px solid black;
-    font-weight: bold;
-}
 
 /* Edits */
 
@@ -360,6 +351,20 @@ p {
 
 h2 {
     padding: 5px;
+}
+
+#experience:focus, #message:focus {
+    border-color: black;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 1);
+    outline: none;
+}
+
+.cat img {
+    width: 100%;
+}
+
+.cat figcaption {
+    text-align: center;
 }
 
 /* Video */
@@ -389,3 +394,34 @@ h2 {
     padding-top: 10px;
 }
 
+
+
+/* Submit button for mobile approuch */
+
+/* 
+form button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    width: 25%;
+    border-radius: 20px;
+    border: 1px solid black;
+    font-weight: bold;
+} */
+
+input[type="button"], button[type="submit"] {
+    display: block;
+    background-color: #00bcd4;
+    color: white;
+    margin: 0 auto;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 15px;
+    font-size: 1.4rem;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+input[type="button"]:active , input[type="submit"]:active {
+    background-color: #008ba3;
+    transform: scale(0.98);
+}
