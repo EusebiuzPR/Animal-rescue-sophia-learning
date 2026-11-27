@@ -380,7 +380,8 @@ span {
 .third-sctn , 
 .forth-sctn , 
 .fith-sctn ,
-.form {
+.form,
+.volunteer-selector {
     box-shadow: 0 10px 25px 3px rgba(0, 0, 0, .50);
 }
 
@@ -493,6 +494,70 @@ input[type="button"]:active , input[type="submit"]:active {
     transform: scale(0.98);
 }
 
+
+.volunteer-selector {
+    background-color: #2AD9A9;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.volunteer-selector h2 {
+    background-color: bisque;
+    border-radius: 20px;
+}
+
+
+    .volunteer-selector label {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+
+    .volunteer-selector select {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    #volunteer-description {
+        margin-top: 15px;
+        line-height: 1.6;
+        text-align: center;
+        margin-bottom: 20px;
+        font-weight: bold;
+        font-size: 1.3rem;
+    }
+
+    .form-submitted {
+        text-align: center;
+    }
+
+@media (width >= 768px) {
+
+        button {
+        transition: transform 0.2s, background-color 0.2s ease;
+    }
+
+    button:hover {
+        cursor: pointer;
+        color: white;
+        background-color: #0097A7;
+        transform: translateY(-3px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, .20) ;
+    }
+
+    button:active {
+        background-color: #00838f;
+        transform: translateY(1px);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
+    }
+
+}
+
  
 /* ================== Desktop Approuch ================== */
 
@@ -532,8 +597,10 @@ input[type="button"]:active , input[type="submit"]:active {
     .first-sctn h2,
      .second-sctn h2 , 
     .third-sctn h2 , 
-    .forth-sctn h2 
+    .forth-sctn h2,
+    .volunteer-selector h2 
      {
+    
         width: 50%;
         margin: 10px auto;
     }
@@ -580,7 +647,8 @@ input[type="button"]:active , input[type="submit"]:active {
     .second-sctn , 
     .third-sctn ,
     .forth-sctn ,
-    .fith-sctn {
+    .fith-sctn,
+    .volunteer-selector {
         padding: 20px;
     }
 
@@ -618,7 +686,8 @@ input[type="button"]:active , input[type="submit"]:active {
     }
 
     .service-page .third-sctn,
-    .service-page .forth-sctn {
+    .service-page .forth-sctn, 
+    .volunteer-selector {
         grid-column: auto;
     }
 
@@ -631,6 +700,40 @@ input[type="button"]:active , input[type="submit"]:active {
         grid-template-columns: repeat(2,1fr);
         gap: 20px;
         align-items: start;
+    }
+ /* ===================== ================= ===  */
+
+
+    .volunteer-selector {
+    background-color: #2AD9A9;
+    margin: 20px 10px;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    grid-column: 2/2;
+    }
+
+    .volunteer-selector label {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+
+    .volunteer-selector select {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    #volunteer-description {
+        margin-top: 15px;
+        line-height: 1.6;
+        text-align: center;
+        margin-bottom: 20px;
+        font-weight: bold;
+        font-size: 1.3rem;
     }
 
 
@@ -679,4 +782,9 @@ input[type="button"]:active , input[type="submit"]:active {
         box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
     }
 }
+}
+
+.form .name-error,
+.form .email-error {
+    color: red;
 }

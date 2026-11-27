@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <script src="js/scripts.js" defer></script>
     <title>Twin acitie Animal Rescue - Service</title>
 </head>
 <body>
@@ -65,6 +66,28 @@
             <p>Volunteers play an important role in supporting our animal rescue mission. They can help care for animals, organize supplies, assist with adoption events, and support daily shelter activities. <br>
                  Every volunteer contribution helps us provide better care and connect more animals with loving families.</p>
         </section>
+
+
+<section class="volunteer-selector">
+    <h2>Explore Volunteer Opportunities</h2>
+
+    <label for="volunteer-role">
+        Select an area of interest:
+    </label>
+
+    <select id="volunteer-role">
+        <option value="">Choose an opportunity</option>
+        <option value="dogWalking">Dog Walking</option>
+        <option value="catCare">Cat Care</option>
+        <option value="animalSocialization">Animal Socialization</option>
+        <option value="administrative">Administrative Assistance</option>
+    </select>
+
+    <div id="volunteer-description" aria-live="polite">
+        <p>Select an opportunity to learn more!</p>
+    </div>
+</section>
+
 
         <div class="vd fith-sctn">
 

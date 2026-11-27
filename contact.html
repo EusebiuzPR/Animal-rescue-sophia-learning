@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <script src="js/scripts.js" defer></script>
     <title>Twin Cities Animal Rescue/Contact</title>
 </head>
 
@@ -46,20 +47,32 @@
 
                 <h2>Make a Differrence: Get Involved!</h2>
 
-                <form action="" method="post">
+                <form action="" method="post" novalidate>
 
                 <div class="input-group">
                     <fieldset>
 
                         <legend>Personal Information</legend>
-                        <label>
+                        <label for="fullName">
                             Full Name:
-                            <input type="text" placeholder="Jonh Doe">
                         </label>
-                        <label> 
-                            Email:
-                            <input type="email" placeholder="JohnDoe@gmail.com" required>
+                            <input 
+                            type="text" 
+                            placeholder="Jonh Doe"
+                            id="fullName"
+                            name="fullName"
+                            required>
+
+                            <span id="name-error" class="name-error"></span>
+                        <label for="email"> 
+                                Email:
                         </label>
+                            <input 
+                            type="email" placeholder="JohnDoe@gmail.com"
+                            id="email"
+                            name="email"
+                            required>
+                        <span id="email-error" class="email-error"></span>
 
                     </fieldset>
                 </div>
@@ -130,6 +143,11 @@
                   
                 
                    <button type="submit">Submit</button>
+                   <p 
+                   id="success-message" 
+                   aria-live="polite"
+                   class="form-submitted"
+                   ></p>
 
 
                 </form>
